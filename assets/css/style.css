@@ -1,0 +1,25 @@
+.navbar{ border: 0px !important; background-color: #fff; margin-bottom: 70px;}
+.navbar-brand, .navbar-nav li a { line-height: 70px; height: 70px; padding-top: 15px; }
+
+
+.highlight {background-size: cover; height: 400px; background-repeat:  no-repeat; transition: opacity .25s ease-in-out;}
+.highlight:hover{ opacity: 0.6; cursor:pointer; }
+.highlight div{position:absolute; bottom:5px; font-size: 22px; text-shadow: 0 2px 0 black; color: #FFF; float: right; width: 100%;}
+.highlight div p{ margin-bottom: 0px; }
+.highlight div label{ font-size: 14px; }
+
+.highlight-1{ background-image: url("/musicall/assets/image/king-gizard-capa.jpg"); }
+.highlight-2{ background-image: url("/musicall/assets/image/tame-impala.jpg"); }
+.highlight-3{ background-image: url("/musicall/assets/image/sa.jpg");}
+.highlight-4{ background-image: url("/musicall/assets/image/lolla.jpg");}
+
+.margin-top-1{ margin-top: 1em; }
+.margin-top-2{ margin-top: 2em; }
+.margin-top-3{ margin-top: 3em; }
+
+.margin-bottom-1{ margin-bottom: 1em; }
+.margin-bottom-2{ margin-bottom: 2em; }
+.margin-bottom-3{ margin-bottom: 3em; }
+
+.content{ margin-top: 100px; }
+.minitext{ font-size: 14px; }
