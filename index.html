@@ -10,92 +10,24 @@ layout: default
       
       <fieldset>
         <legend>Posts</legend>
-      
-      <ul class="list-group">
-        <li class="list-group-item">
-          <div class="post-link">
-            <h3>
-              <a href="#">Currents - Tame Impala</a>
-            </h3>
+        <ul class="list-group">
+          {% for post in site.posts %}
+            <li class="list-group-item">
+              <div class="post-link">
+                <h3>
+                  <a href="{{ post.url | remove_first:'/'}}">{{ post.title }}</a>
+                </h3>
 
-            <ul class="list-inline grey-colour">
-              <li class="bold">RESENHA</li>
-              <li><span class="glyphicon glyphicon-time"></span></li>
-              <li>21/01/1990</li>
-              <li><span class="glyphicon glyphicon-comment"></span></li>
-              <li>1</li>
-            </ul>
-
-          </div>    
-        </li>
-        <li class="list-group-item">
-            <div class="post-link">
-              <h3>
-                <a href="#">Currents - Tame Impala</a>
-              </h3>
-
-              <ul class="list-inline grey-colour">
-                <li class="bold">RESENHA</li>
-                <li><span class="glyphicon glyphicon-time"></span></li>
-                <li>21/01/1990</li>
-                <li><span class="glyphicon glyphicon-comment"></span></li>
-                <li>1</li>
-              </ul>
-
-            </div>          
-        </li>
-        <li class="list-group-item">
-            <div class="post-link">
-              <h3>
-                <a href="#">Currents - Tame Impala</a>
-              </h3>
-
-              <ul class="list-inline grey-colour">
-                <li class="bold">RESENHA</li>
-                <li><span class="glyphicon glyphicon-time"></span></li>
-                <li>21/01/1990</li>
-                <li><span class="glyphicon glyphicon-comment"></span></li>
-                <li>1</li>
-              </ul>
-
-            </div>          
-        </li>
-        <li class="list-group-item">
-            <div class="post-link">
-              <h3>
-                <a href="#">Currents - Tame Impala</a>
-              </h3>
-
-              <ul class="list-inline grey-colour">
-                <li class="bold">RESENHA</li>
-                <li><span class="glyphicon glyphicon-time"></span></li>
-                <li>21/01/1990</li>
-                <li><span class="glyphicon glyphicon-comment"></span></li>
-                <li>1</li>
-              </ul>
-
-            </div>          
-        </li>
-      </ul>
-
+                <p class="bold">{{post.tipo}} por <i>{{post.author}}</i></p>
+                <p>{{ post.date | date: "%d/%m/%Y" }}</p>
+                
+              </div>
+            </li>
+          {% endfor %}
+         </ul>
 
       <button class="btn btn-primary margin-top-2 margin-bottom-2">Carregar Mais Antigos</button>
      </fieldset>
-
-     <!--
-     {% for post in site.posts %}
-        <p>
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>          
-          </h2>
-          <p class="minitext"> 
-            <span class="glyphicon glyphicon-time"></span> 21/01/1990
-             
-            <span class="glyphicon glyphicon-comment"></span> 1   
-          </p>
-        </p>
-    {% endfor %}
-    -->
 
     </div>
 
@@ -110,7 +42,7 @@ layout: default
                  </div>
                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
                     <a href="http://twitter.com/musicall"><i class="fa fa-twitter-square fa-3x twitter-color"></i></a>
-                    <p class="minitext bold"><a href="http://twitter.com/musicall">/musicall</a></p>
+                    <p class="minitext bold"><a href="http://twitter.com/musicall">@musicall</a></p>
                  </div> 
               </div>
 
@@ -129,24 +61,3 @@ layout: default
   
   
 </div>
-
-<!--
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>-->

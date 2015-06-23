@@ -1,3 +1,5 @@
+body{font-family: 'Lato' ,'Signika', 'Heveltica'; color: #777;}
+
 .navbar{ border: 0px !important; background-color: #fff; margin-bottom: 70px;}
 .navbar-brand, .navbar-nav li a { line-height: 70px; height: 70px; padding-top: 15px; }
 
@@ -47,9 +49,21 @@
 .btn:active.focus,
 .btn.active.focus {background-color: #009090 !!important;}
 
+.post-image{ height: 400px; background-size: cover; }
+.post-title{ font-weight: bolder; }
+
 .footer{margin-top: 4em; background-color: #008080; height: 350px;}
 
-.banda-box-img{ height: 200; background-size: cover; }
+.banda-box{ height: 380px; }
+.banda-box-img{ height: 200px; background-size: cover; }
+
+.disco-box{ height: 400px; }
+.disco-box-img{ height: 280px; background-size: cover; }
+
+.artigo-box{ height: 380px; }
+.artigo-box-img{ height: 200px; background-size: cover; }
+
+.readable{ font-size: 16pt !important; text-shadow:0 0 1px transparent; line-height:36px; font-family: Georgia;}
 
 a{ color: #008080; }
 textarea:focus,
