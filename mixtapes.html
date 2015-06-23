@@ -2,35 +2,30 @@
 layout: page
 ---
 
-<div class="container margin-top-adjust artigo-box">
+<div class="container margin-top-adjust">
 
 	<fieldset>
 		<legend>Mixtapes</legend>
 
 		<div class="row">
+			{% for cat in site.categories['bandas'] %}
 			<div class="col-md-4">
 
-				<div class="panel panel-default">
+				<div class="panel panel-default mixtape-box">
 					<div class="panel-body">
-						<div class="panel-body">
 							
-							<div class="row">
-								 <div class="col-sm-12 col-md-12">
-								 	 <div class="artigo-box-img" style="background-image: url('{{ "/assets/image/lolla.jpg" | prepend: site.baseurl }}')"></div>
-								 	 <h3><a href="#">Lollapaloza - 2015</a></h3>
-								 	 <ul class="list-inline grey-colour">
-		              			     	<li><span class="glyphicon glyphicon-time"></span></li>
-		              					<li>21/01/1990</li>
-		              				    <li><span class="glyphicon glyphicon-comment"></span></li>
-		              		            <li>1</li>
-		            				</ul>
-								 </div>
-							</div>
-
-				 		</div>
+						<div class="row">
+							 <div class="col-sm-12 col-md-12">
+							 	 <div class="mixtape-box-img" style="background-image: url('{{ "/assets/image/" | prepend: site.baseurl }}{{cat.img}}')"></div>
+							 	 <h3><a href="{{ cat.url | remove_first:'/'}}">{{cat.title}}</a></h3>
+							 	 <p>Em {{ cat.date | date: "%d/%m/%Y" }} por <i>{{cat.author}}</i>
+							 </div>
+						</div>
+						
 				 	</div>
 			 	</div>
 			</div>
+			{% endfor %}
 
 
 		</div>

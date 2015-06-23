@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "King Gizzard and Lizard King!"
+title:  "King Gizzard and Lizard King - The Flush Method"
 date:   2015-06-22 18:03:28
 categories: bandas
 author: Adriano Brito

@@ -57,11 +57,14 @@ body{font-family: 'Lato' ,'Signika', 'Heveltica'; color: #777;}
 .banda-box{ height: 380px; }
 .banda-box-img{ height: 200px; background-size: cover; }
 
-.disco-box{ height: 400px; }
+.disco-box{ height: 450px; }
 .disco-box-img{ height: 280px; background-size: cover; }
 
 .artigo-box{ height: 380px; }
 .artigo-box-img{ height: 200px; background-size: cover; }
+
+.mixtape-box{ height: 380px; }
+.mixtape-box-img{ height: 200px; background-size: cover; }
 
 .readable{ font-size: 16pt !important; text-shadow:0 0 1px transparent; line-height:36px; font-family: Georgia;}
 
