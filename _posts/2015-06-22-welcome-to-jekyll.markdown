@@ -1,12 +1,17 @@
 ---
 layout: post
-title:  "King Gizzard and Lizard King - The Flush Method"
-date:   2015-06-22 18:03:28
-categories: bandas
+title:  "Jacco Gardner - Hypnophobia"
+date:   2015-11-13 18:03:28
+categories: discos
 author: Adriano Brito
-img: king-gizard-capa.jpg
+img: hypnophobia.jpg
 tipo: BANDA
 ---
+
+Este pra mim foi o melhor disco de 2015 sem nenhuma dúvida, e eu até poderia neste post fazer uma grande propaganda do mesmo e listar todos os motivos pra você acreditar em mim, mas vou fazer diferente. Esta será uma análise baseada exclusivamente nas emoções.
+
+A trajetória de Jacco Gardner em Hypnophobia
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris velit, rutrum a varius et, sodales non purus. Morbi fringilla vel tellus a aliquet. Ut eleifend tellus leo, eu malesuada ipsum interdum vitae. Sed in felis id sem laoreet interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod maximus hendrerit. Donec gravida laoreet enim semper rutrum. Aliquam molestie ultricies est. In sed diam non nisi dapibus congue a in tortor. Vivamus molestie massa iaculis, ultricies sem sit amet, interdum eros. Vestibulum cursus metus libero, eget aliquam nisl hendrerit id.
 
 In vestibulum nisl nisi, a ultrices mi vehicula at. Nunc lacus dui, lacinia id nulla ut, facilisis elementum mi. In finibus leo quam. Etiam tristique placerat nisi, et elementum libero ullamcorper eget. Quisque tempus ligula non interdum pretium. Nullam laoreet, tortor non mollis egestas, dui neque sollicitudin eros, hendrerit ullamcorper lorem ligula a mauris. Proin pulvinar velit leo, in bibendum lectus tempus non. Nullam et ante congue, condimentum neque vitae, ornare massa. Morbi eget finibus urna. Sed lectus diam, tristique sed quam ac, placerat ullamcorper massa. Mauris diam eros, gravida scelerisque eros in, vehicula scelerisque justo.

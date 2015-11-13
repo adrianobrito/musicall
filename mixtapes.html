@@ -8,12 +8,12 @@ layout: page
 		<legend>Mixtapes</legend>
 
 		<div class="row">
-			{% for cat in site.categories['bandas'] %}
+			{% for cat in site.categories['mixtapes'] %}
 			<div class="col-md-4">
 
 				<div class="panel panel-default mixtape-box">
 					<div class="panel-body">
-							
+
 						<div class="row">
 							 <div class="col-sm-12 col-md-12">
 							 	 <div class="mixtape-box-img" style="background-image: url('{{ "/assets/image/" | prepend: site.baseurl }}{{cat.img}}')"></div>
@@ -21,7 +21,7 @@ layout: page
 							 	 <p>Em {{ cat.date | date: "%d/%m/%Y" }} por <i>{{cat.author}}</i>
 							 </div>
 						</div>
-						
+
 				 	</div>
 			 	</div>
 			</div>
@@ -32,5 +32,5 @@ layout: page
 
 	</fieldset>
 
-	
+
 </div>
