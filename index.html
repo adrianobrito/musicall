@@ -9,7 +9,7 @@ layout: default
     <div class="col-sm-8 col-md-8">
 
       <fieldset>
-        <legend>Posts</legend>
+        <legend>Matérias</legend>
         <ul class="list-group">
           {% for post in paginator.posts %}
             <li class="list-group-item">
@@ -26,6 +26,7 @@ layout: default
           {% endfor %}
          </ul>
 
+      {% if paginator.total_pages > 5 %}
        <div class="pagination">
          {% if paginator.previous_page %}
            <a href="{{ paginator.previous_page_path }}" class="previous">Anterior</a>
@@ -39,24 +40,15 @@ layout: default
            <span class="next ">Próximo</span>
          {% endif %}
        </div>
+      {% endif %}
 
      </fieldset>
 
     </div>
 
     <div class="col-sm-4 col-md-4">
-       <div class="panel panel-default">
-          <div class="panel-heading">Som que rola</div>
-          <div class="panel-body">
-
-              <div class="row margin-top-2">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                  <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=250&height=250&color=1990DB&layout=dark&size=medium&type=playlist&id=221953173&title=&app_id=1" width="250" height="250"></iframe>
-                </div>
-              </div>
-
-          </div>
-      </div>
+      <a class="twitter-timeline" href="https://twitter.com/hashtag/musicall" data-widget-id="669553972185841664">Tweets</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
 
   </div>

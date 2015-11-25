@@ -5,7 +5,7 @@ date:   2015-11-13 18:03:28
 categories: discos
 author: Adriano Brito
 img: hypnophobia.jpg
-tipo: BANDA
+tipo: DISCO
 ---
 
 Este pra mim foi o melhor disco de 2015 sem nenhuma dúvida, e eu até poderia neste post fazer uma grande propaganda do mesmo e listar todos os motivos pra você acreditar em mim, mas vou fazer diferente. Esta será uma análise baseada exclusivamente nas emoções.
