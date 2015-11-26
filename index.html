@@ -10,21 +10,22 @@ layout: default
 
       <fieldset>
         <legend>Matérias</legend>
-        <ul class="list-group">
-          {% for post in paginator.posts %}
-            <li class="list-group-item">
-              <div class="post-link">
-                <h3>
-                  <a href="{{ post.url | remove_first:'/'}}">{{ post.title }}</a>
-                </h3>
-
-                <p class="bold">{{post.tipo}} por <i>{{post.author}}</i></p>
-                <p>{{ post.date | date: "%d/%m/%Y" }}</p>
-
-              </div>
-            </li>
-          {% endfor %}
-         </ul>
+        {% for post in paginator.posts %}
+          <div class="post-link">
+            <h3>
+              <a href="{{ post.url | remove_first:'/'}}">{{ post.title }}</a>
+            </h3>
+            <p class="bold">{{post.tipo}} por <i>{{post.author}}</i></p>
+            <p>{{ post.date | date: "%d/%m/%Y" }}</p>
+          </div>
+          <div class="post-content-truncate readable margin-bottom-3">
+            {% if post.content contains "<!-- more -->" %}
+              {{ post.content | split:"<!-- more -->" | first % }}
+            {% else %}
+              {{ post.content | strip_html | truncatewords:100 }}
+            {% endif %}
+          </div>
+        {% endfor %}
 
       {% if paginator.total_pages > 5 %}
        <div class="pagination">
@@ -47,7 +48,7 @@ layout: default
     </div>
 
     <div class="col-sm-4 col-md-4">
-      <a class="twitter-timeline" href="https://twitter.com/hashtag/musicall" data-widget-id="669553972185841664">Tweets</a>
+      <a class="twitter-timeline" href="https://twitter.com/blogmusicall" data-widget-id="669925210825576448">Tweets de @blogmusicall</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
 
