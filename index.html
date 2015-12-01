@@ -18,29 +18,34 @@ layout: default
             <p class="bold">{{post.tipo}} por <i>{{post.author}}</i></p>
             <p>{{ post.date | date: "%d/%m/%Y" }}</p>
           </div>
-          <div class="post-content-truncate readable margin-bottom-3">
+          <div class="post-content-truncate readable">
             {% if post.content contains "<!-- more -->" %}
               {{ post.content | split:"<!-- more -->" | first % }}
             {% else %}
               {{ post.content | strip_html | truncatewords:100 }}
             {% endif %}
           </div>
+          <div class="row margin-top-1 margin-bottom-3">
+            <div class="col-md-12">
+                <a href="{{ post.url | remove_first:'/'}}" class="btn btn-primary">Continuar lendo...</a>
+            </div>
+          </div>
         {% endfor %}
 
       {% if paginator.total_pages > 5 %}
-       <div class="pagination">
-         {% if paginator.previous_page %}
-           <a href="{{ paginator.previous_page_path }}" class="previous">Anterior</a>
-         {% else %}
-           <span class="previous">Anterior</span>
-         {% endif %}
-         <span class="page_number ">Proximo: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-         {% if paginator.next_page %}
-           <a href="{{ paginator.next_page_path }}" class="next">Próximo</a>
-         {% else %}
-           <span class="next ">Próximo</span>
-         {% endif %}
-       </div>
+        <div class="pagination">
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="previous btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> Anterior</a>
+          {% else %}
+            <button class="previous btn btn-default" disabled> <span class="glyphicon glyphicon-chevron-left"></span> Anterior</button>
+          {% endif %}
+          <span class="page_number ">{{ paginator.page }} de {{ paginator.total_pages }}</span>
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next btn btn-default">Próximo</a>
+          {% else %}
+            <button class="next btn btn-default" disabled> <span class="glyphicon glyphicon-chevron-right"></span> Próximo</button>
+          {% endif %}
+        </div>
       {% endif %}
 
      </fieldset>
