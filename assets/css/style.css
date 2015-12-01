@@ -2,7 +2,7 @@ body{font-family: 'Lato' ,'Signika', 'Heveltica'; color: #777;}
 
 .navbar{ border: 0px !important; background-color: #fff; margin-bottom: 70px;}
 .navbar-brand, .navbar-nav li a { line-height: 70px; height: 70px; padding-top: 15px; }
-
+.nav-over { font-weight: bolder; color: #4fb0ae !important; }
 
 .highlight {background-size: cover; height: 400px; background-repeat:  no-repeat; transition: opacity .25s ease-in-out;}
 .highlight:hover{ opacity: 0.6; cursor:pointer; }

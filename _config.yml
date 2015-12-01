@@ -10,9 +10,9 @@ description: > # this means to ignore newlines until "baseurl:"
 #baseurl: "/musicall/" # the subpath of your site, e.g. /blog/
 #url: "http://localhost:4000" # the base hostname & protocol for your site
 
-# Local Config
-baseurl: "/musicall/" # the subpath of your site, e.g. /blog/
-url: "http://adrianobrito.github.io/musicall" # the base hostname & protocol for your site
+# Remote Config
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://musicall.blog.br" # the base hostname & protocol for your site
 
 twitter_username: jekyllrb
 github_username:  jekyll

@@ -4,12 +4,12 @@ var go_to = function(link){
 
 $(document).ready(function(){
   $(".with-bar").mouseover(function(){
-    console.log("entrou");
+    $(this).addClass('nav-over');
     this.innerHTML = '// ' + $(this).text();
   });
 
   $(".with-bar").mouseout(function(){
-    console.log("saiu");
+    $(this).removeClass('nav-over');
     $(this).text($(this).text().split('//')[1]);
-  });  
+  });
 })
