@@ -6,17 +6,26 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
+# External dependencies
+gems: [jekyll-paginate,jekyll-paginate-category]
+
 # Local Config
-baseurl: "/musicall/" # the subpath of your site, e.g. /blog/
+baseurl: "/musicall" # the subpath of your site, e.g. /blog/
 url: "http://localhost:4000" # the base hostname & protocol for your site
 
 # Remote Config
 #baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://musicall.blog.br" # the base hostname & protocol for your site
-
+categories: [Album,Single,Playlist,EP]
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
 markdown: kramdown
 paginate: 5
+
+paginate: 5
+paginate_path: "page:num"
+
+category_dir: "categories"
+category_layout: "index.html"

@@ -1,28 +1,74 @@
 ---
 layout: page
 ---
-<div class="container-fluid post-image margin-top-adjust" style="background-image: url('{{ "/assets/image/" | prepend: site.baseurl }}{{page.img}}')">
-</div>
 
-<div class="container margin-top-2">
-	
+<div class="container margin-top-5">
+
 	<h1 class="post-title">{{page.title}}</h1>
-	<p class="smalltext post-title">{{page.tipo}} por <i>{{page.author}}</i></p>
-	<ul class="list-inline grey-colour">
-      <li><span class="glyphicon glyphicon-time"></span></li>
-      <li>{{ page.date | date: "%d/%m/%Y" }}</li>
-    </ul>
+	<ul class='basic-ul'>
+		<li>{{page.type}}</li>
+		<li>{{page.year}}</li>
+	</ul>
 
-    <div class="readable">
+		<div class='cover'>
+			<img src='{{ "/assets/image/covers/" | prepend: site.baseurl}}{{page.cover}}'>
+		</div>
+
+    <div class="readable margin-top-2">
     	{{content}}
     </div>
+
+		<div class='readable description'>
+			{{page.description}}
+		</div>
+
+		<div class='youtube-video'>
+			<iframe width="100%" height="360" src="{{page.youtube}}" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		<ul class="list-group">
+			{% if page.spotify %}
+			<li class="list-group-item">
+				<a href='{{page.spotify}}'><i class='fa fa-spotify'></i> Spotify</a>
+			</li>
+			{% endif %}
+
+			{% if page.youtube %}
+			<li class="list-group-item">
+				<a href='{{page.youtube}}'><i class='fa fa-youtube'></i> Youtube</a>
+			</li>
+			{% endif %}
+
+			{% if page.deezer %}
+			<li class="list-group-item">
+				<a href='{{page.deezer}}'>Deezer</a>
+			</li>
+			{% endif %}
+
+			{% if page.bandcamp %}
+			<li class="list-group-item">
+				<a href='{{page.bandcamp}}'>Bandcamp</a>
+			</li>
+			{% endif %}
+
+			{% if page.site %}
+			<li class="list-group-item">
+				<a href='{{page.site}}'>Site</a>
+			</li>
+			{% endif %}
+
+		</ul>
+
+		<div class='tags gray-color'>
+			{{page.tags | array_to_sentence_string}}
+		</div>
 
     <div class="comments">
     	<div id="disqus_thread"></div>
 		<script type="text/javascript">
 		    /* * * CONFIGURATION VARIABLES * * */
 		    var disqus_shortname = 'musicall';
-		    
+
 		    /* * * DON'T EDIT BELOW THIS LINE * * */
 		    (function() {
 		        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
