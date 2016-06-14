@@ -12,6 +12,8 @@ gems: [jekyll-paginate,jekyll-paginate-category]
 # Local Config
 baseurl: "http://musicall.blog.br" # the subpath of your site, e.g. /blog/
 url: "http://musicall.blog.br" # the base hostname & protocol for your site
+#baseurl: "/musicall/" # the subpath of your site, e.g. /blog/
+#url: "http://localhost:4000"
 
 # Remote Config
 #baseurl: "" # the subpath of your site, e.g. /blog/
