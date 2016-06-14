@@ -6,6 +6,7 @@ category: Album
 year: 2016
 author: Adriano Brito
 cover: hypnophobia.jpg
+embedded_youtube: https://www.youtube.com/embed/YDSiImxP6Vw
 spotify: https://open.spotify.com/artist/5RfKXXQQn2OhZiT5iSggZn
 youtube: https://youtube.com/user/jaccogardner
 tags:

@@ -23,7 +23,7 @@ layout: page
 		</div>
 
 		<div class='youtube-video'>
-			<iframe width="100%" height="360" src="{{page.youtube}}" frameborder="0" allowfullscreen></iframe>
+			<iframe width="100%" height="360" src="{{page.embedded_youtube}}" frameborder="0" allowfullscreen></iframe>
 		</div>
 
 		<ul class="list-group">
@@ -36,6 +36,12 @@ layout: page
 			{% if page.spotify %}
 			<li class="list-group-item">
 				<a href='{{page.spotify}}'><i class='fa fa-spotify'></i> Spotify</a>
+			</li>
+			{% endif %}
+
+			{% if page.youtube %}
+			<li class="list-group-item">
+				<a href='{{page.youtube}}'><i class='fa fa-youtube'></i> Youtube</a>
 			</li>
 			{% endif %}
 
