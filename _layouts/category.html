@@ -1,57 +1,31 @@
 ---
-layout: page
+layout: subpage
 ---
-<div class='container margin-top-7'>
-<h1>{{page.title}}</h1>
+<div class='container margin-top-4'>
+<h1>
+  {% if page.title == "Album" %}
+    Albuns
+  {% endif %}
+  {% if page.title == "EP" %}
+    EP's
+  {% endif %}
+  {% if page.title == "Single" %}
+    Singles
+  {% endif %}
+  {% if page.title == "Compilacao" %}
+    Compilações
+  {% endif %}
+  {% if page.title == "Playlist" %}
+    Playlists
+  {% endif %}
+</h2>
 
-{% for post in site.categories[page.category] %}
-<div class="post-content-truncate readable margin-top-3">
-  <h2>{{post.title}}</h2>
-
-  <div class='cover'>
-    <img src='{{ "/assets/image/covers/" | prepend: site.baseurl}}{{post.cover}}'>
-  </div>
-
-  <p>{{post.content}}</p>
-
-  <div class='youtube-video'>
-    <iframe width="100%" height="360" src="{{post.youtube}}" frameborder="0" allowfullscreen></iframe>
-  </div>
-
-  <ul class="list-group">
-    {% if post.spotify %}
-    <li class="list-group-item">
-      <a href='{{post.spotify}}'><i class='fa fa-spotify'></i> Spotify</a>
-    </li>
-    {% endif %}
-
-    {% if post.youtube %}
-    <li class="list-group-item">
-      <a href='{{post.youtube}}'><i class='fa fa-youtube'></i> Youtube</a>
-    </li>
-    {% endif %}
-
-    {% if post.deezer %}
-    <li class="list-group-item">
-      <a href='{{post.deezer}}'>Deezer</a>
-    </li>
-    {% endif %}
-
-    {% if post.bandcamp %}
-    <li class="list-group-item">
-      <a href='{{post.bandcamp}}'>Bandcamp</a>
-    </li>
-    {% endif %}
-
-    {% if post.site %}
-    <li class="list-group-item">
-      <a href='{{post.site}}'>Site</a>
-    </li>
-    {% endif %}
-
-  </ul>
-
-</div>
-{% endfor %}
+<ul class='basic-ul'>
+  {% for post in site.categories[page.category] %}
+  <li>
+    <a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }} ({{post.year}})</a>
+  </li>
+  {% endfor %}
+</ul>
 
 </div>

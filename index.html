@@ -62,7 +62,15 @@ layout: default
 
         		</ul>
 
+            <div class='tags gray-color'>
+        			Tags:
+        			{% for tag in post.tags %}
+        			<a href='{{ "/tag/" | prepend: site.baseurl }}{{tag}}'>#{{tag}}</a> &nbsp;
+        			{% endfor %}
+        		</div>
+
           </div>
+          <br/> <br/>
         {% endfor %}
 
       {% if paginator.total_pages > 5 %}
@@ -88,17 +96,25 @@ layout: default
     <div class="col-sm-3 col-md-3 right-sidebar">
       <ul class='links-sidebar'>
         <li>
-          <a href='#' style='font-weight: bolder;'>Albuns ({{site.categories['Album'].size}})</a>
+          <a href='{{ "/category/Album" | prepend: site.baseurl }}' style='font-weight: bolder;'>Albuns ({{site.categories['Album'].size}})</a>
+        </li>
+        <!--
+        <li>
+          <a href='{{ "/category/Single" | prepend: site.baseurl }}' style='font-weight: bolder;'>Singles ({{site.categories['Single'].size}})</a>
         </li>
 
         <li>
-          <a href='#' style='font-weight: bolder;'>Singles ({{site.categories['Single'].size}})</a>
+          <a href='{{ "/category/EP" | prepend: site.baseurl }}' style='font-weight: bolder;'>EPs ({{site.categories['EP'].size}})</a>
         </li>
 
         <li>
-          <a href='#' style='font-weight: bolder;'>EPs ({{site.categories['EP'].size}})</a>
+          <a href='{{ "/category/Compilacao" | prepend: site.baseurl }}' style='font-weight: bolder;'>Compilação ({{site.categories['Compilacao'].size}})</a>
         </li>
 
+        <li>
+          <a href='{{ "/category/Playlist" | prepend: site.baseurl }}' style='font-weight: bolder;'>Playlists ({{site.categories['Playlist'].size}})</a>
+        </li>
+      -->
       </ul>
     </div>
 

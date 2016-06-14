@@ -33,12 +33,6 @@ layout: page
 			</li>
 			{% endif %}
 
-			{% if page.youtube %}
-			<li class="list-group-item">
-				<a href='{{page.youtube}}'><i class='fa fa-youtube'></i> Youtube</a>
-			</li>
-			{% endif %}
-
 			{% if page.deezer %}
 			<li class="list-group-item">
 				<a href='{{page.deezer}}'>Deezer</a>
@@ -60,7 +54,10 @@ layout: page
 		</ul>
 
 		<div class='tags gray-color'>
-			{{page.tags | array_to_sentence_string}}
+			Tags:
+			{% for tag in page.tags %}
+			<a href='{{ "/tag/" | prepend: site.baseurl }}{{tag}}'>#{{tag}}</a> &nbsp;
+			{% endfor %}
 		</div>
 
     <div class="comments">

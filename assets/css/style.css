@@ -1,4 +1,4 @@
-body{font-family: 'Lato' ,'Signika', 'Heveltica'; color: #777;}
+body{font-family: 'Fira Sans', sans-serif; color: #777;}
 
 .navbar{ border: 0px !important; background-color: #fff; margin-bottom: 70px;}
 .navbar-brand, .navbar-nav li a { line-height: 70px; height: 70px; padding-top: 15px; }
@@ -54,7 +54,7 @@ body{font-family: 'Lato' ,'Signika', 'Heveltica'; color: #777;}
 .post-title{ font-weight: bolder; }
 
 .footer{background-color: #4fb0ae;   padding-right: 0px !important;  padding-left: 0px !important; height: 80px;}
-.color-white { color: white; }
+.color-white { color: white !important; }
 
 
 .banda-box{ height: 380px; }
@@ -69,7 +69,7 @@ body{font-family: 'Lato' ,'Signika', 'Heveltica'; color: #777;}
 .mixtape-box{ height: 380px; }
 .mixtape-box-img{ height: 200px; background-size: cover; }
 
-.readable{ font-size: 16pt !important; text-shadow:0 0 1px transparent; line-height:36px; font-family: Georgia;}
+.readable{ font-size: 16pt !important; text-shadow:0 0 1px transparent; line-height:36px; }
 
 a{ color: #008080; }
 textarea:focus,
@@ -98,3 +98,8 @@ html,body{width:100%;}
 .basic-ul { list-style-type: none; padding: 0;}
 .links-sidebar { list-style: none; text-align: right; position: fixed;}
 .cover img{ height: 500px; width: 500px; }
+
+@media screen and (max-width: 600px) {
+	.cover img{ height: 300px; width: 300px; }
+  .readable{ font-size: 14pt !important; text-shadow:0 0 1px transparent; line-height:36px; }
+}
