@@ -27,6 +27,12 @@ layout: page
 		</div>
 
 		<ul class="list-group">
+			{% if page.soundcloud %}
+			<li class="list-group-item">
+				<a href='{{page.soundcloud}}'><i class='fa fa-soundcloud'></i> Soundcloud</a>
+			</li>
+			{% endif %}
+
 			{% if page.spotify %}
 			<li class="list-group-item">
 				<a href='{{page.spotify}}'><i class='fa fa-spotify'></i> Spotify</a>
