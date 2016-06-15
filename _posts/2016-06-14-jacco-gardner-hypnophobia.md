@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Jacco Gardner - Hypnophobia"
-date:   2015-06-13 18:03:28
+date:   2016-06-13 18:03:28
 category: Album
 year: 2015
 author: Adriano Brito
@@ -15,7 +15,7 @@ tags:
   - Holanda
   - Rock
   - Barroco
-  - Rock Psicodelico
+  - Rock Psicodelico  
 ---
 
 1.	Another You

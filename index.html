@@ -14,7 +14,7 @@ layout: default
               <a href="{{ post.url | remove_first:'/'}}">{{ post.title }}</a>
             </h3>
             <ul class='basic-ul'>
-          		<li>{{post.type}}</li>
+          		<li>{{post.category}}</li>
           		<li>{{post.year}}</li>
           	</ul>
           </div>
@@ -31,29 +31,39 @@ layout: default
 
             <div class="list-group">
         			{% if post.soundcloud %}
-        				<a class='list-group-item logo-color' href='{{post.soundcloud}}'><i class='fa fa-soundcloud'></i> Soundcloud</a>
+        				<a class='list-group-item logo-color' target="_blank" href='{{post.soundcloud}}'><i class='fa fa-soundcloud'></i> Soundcloud</a>
         			{% endif %}
 
         			{% if post.spotify %}
-        				<a class='list-group-item logo-color' href='{{post.spotify}}'><i class='fa fa-spotify'></i> Spotify</a>
+        				<a class='list-group-item logo-color' target="_blank" href='{{post.spotify}}'><i class='fa fa-spotify'></i> Spotify</a>
         			{% endif %}
 
         			{% if post.youtube %}
-        				<a class='list-group-item logo-color' href='{{post.youtube}}'><i class='fa fa-youtube'></i> Youtube</a>
+        				<a class='list-group-item logo-color' target="_blank" href='{{post.youtube}}'><i class='fa fa-youtube'></i> Youtube</a>
         			{% endif %}
 
         			{% if post.deezer %}
-        				<a class='list-group-item logo-color' href='{{post.deezer}}'>Deezer</a>
+        				<a class='list-group-item logo-color' target="_blank" href='{{post.deezer}}'>Deezer</a>
         			{% endif %}
 
         			{% if post.bandcamp %}
-        				<a class='list-group-item logo-color' href='{{post.bandcamp}}'>Bandcamp</a>
+        				<a class='list-group-item logo-color' target="_blank" href='{{post.bandcamp}}'>Bandcamp</a>
         			{% endif %}
 
         			{% if post.site %}
-        				<a class='list-group-item logo-color' href='{{post.site}}'>Site</a>
+        				<a class='list-group-item logo-color' target="_blank" href='{{post.site}}'>Site</a>
         			{% endif %}
         		</div>
+
+            {% if post.sponsor %}
+        		<div class='credits'>
+        			{% if post.category == "Playlist" %}
+        				Playlist criada por <a href="{{post.sponsor_link}}">{{post.sponsor}}</a>.
+        			{% else %}
+        				{{post.category}} indicado por <a href="{{post.sponsor_link}}">{{post.sponsor}}</a>.
+        			{% endif %}
+        		</div>
+        		{% endif %}
 
             <div class='tags gray-color'>
         			Tags:
@@ -93,16 +103,20 @@ layout: default
         </li>
 
         <li>
+          <a href='{{ "/category/playlist" | prepend: site.baseurl }}' style='font-weight: bolder;'>Playlists ({{site.categories['Playlist'].size}})</a>
+        </li>
+
+        <li>
+          <a href='{{ "/category/EP" | prepend: site.baseurl }}' style='font-weight: bolder;'>EPs ({{site.categories['EP'].size}})</a>
+        </li>
+
+        <li>
           <a href='{{ "/category/compilacao" | prepend: site.baseurl }}' class='bold'>Compilação ({{site.categories['Compilacao'].size}})</a>
         </li>
 
         <!--
         <li>
           <a href='{{ "/category/single" | prepend: site.baseurl }}' style='font-weight: bolder;'>Singles ({{site.categories['Single'].size}})</a>
-        </li>
-
-        <li>
-          <a href='{{ "/category/EP" | prepend: site.baseurl }}' style='font-weight: bolder;'>EPs ({{site.categories['EP'].size}})</a>
         </li>
 
         <li>

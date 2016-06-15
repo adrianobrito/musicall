@@ -6,7 +6,7 @@ layout: page
 
 	<h1 class="post-title">{{page.title}}</h1>
 	<ul class='basic-ul'>
-		<li>{{page.type}}</li>
+		<li>{{page.category}}</li>
 		<li>{{page.year}}</li>
 	</ul>
 
@@ -28,30 +28,40 @@ layout: page
 
 		<div class="list-group">
 			{% if page.soundcloud %}
-				<a class='list-group-item logo-color' href='{{page.soundcloud}}'><i class='fa fa-soundcloud'></i> Soundcloud</a>
+				<a class='list-group-item logo-color' target="_blank" href='{{page.soundcloud}}'><i class='fa fa-soundcloud'></i> Soundcloud</a>
 			{% endif %}
 
 			{% if page.spotify %}
-				<a class='list-group-item logo-color' href='{{page.spotify}}'><i class='fa fa-spotify'></i> Spotify</a>
+				<a class='list-group-item logo-color' target="_blank" href='{{page.spotify}}'><i class='fa fa-spotify'></i> Spotify</a>
 			{% endif %}
 
 			{% if page.youtube %}
-				<a class='list-group-item logo-color' href='{{page.youtube}}'><i class='fa fa-youtube'></i> Youtube</a>
+				<a class='list-group-item logo-color' target="_blank" href='{{page.youtube}}'><i class='fa fa-youtube'></i> Youtube</a>
 			{% endif %}
 
 			{% if page.deezer %}
-				<a class='list-group-item logo-color' href='{{page.deezer}}'>Deezer</a>
+				<a class='list-group-item logo-color' target="_blank" href='{{page.deezer}}'>Deezer</a>
 			{% endif %}
 
 			{% if page.bandcamp %}
-				<a class='list-group-item logo-color' href='{{page.bandcamp}}'>Bandcamp</a>
+				<a class='list-group-item logo-color' target="_blank" href='{{page.bandcamp}}'>Bandcamp</a>
 			{% endif %}
 
 			{% if page.site %}
-				<a class='list-group-item logo-color' href='{{page.site}}'>Site</a>
+				<a class='list-group-item logo-color' target="_blank" href='{{page.site}}'>Site</a>
 			{% endif %}
 
 		</div>
+
+		{% if page.sponsor %}
+		<div class='credits'>
+			{% if page.category == "Playlist" %}
+				Playlist enviada por <a href="{{page.sponsor_link}}">{{page.sponsor}}</a>
+			{% else %}
+				{{page.category}} enviado por <a href="{{page.sponsor_link}}">{{page.sponsor}}</a>
+			{% endif %}
+		</div>
+		{% endif %}
 
 		<div class='tags gray-color'>
 			Tags:
