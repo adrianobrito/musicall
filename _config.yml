@@ -24,4 +24,5 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-paginate: 5
+paginate: 3
+paginate_path: "/:num/"

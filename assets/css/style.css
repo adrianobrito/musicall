@@ -65,7 +65,7 @@ body{font-family: 'Fira Sans', sans-serif; color: #777;}
 
 .readable{ font-size: 16pt !important; text-shadow:0 0 1px transparent; line-height:36px; }
 
-a{ color: #008080; }
+a, a.logo-color, .logo-color{ color: #008080 !important; }
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,

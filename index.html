@@ -29,44 +29,31 @@ layout: default
         			<iframe width="100%" height="420" src="{{post.embedded_youtube}}" frameborder="0" allowfullscreen></iframe>
         		</div>
 
-        		<ul class="list-group">
-              {% if post.soundcloud %}
-        			<li class="list-group-item">
-        				<a href='{{post.soundcloud}}'><i class='fa fa-soundcloud'></i> Soundcloud</a>
-        			</li>
+            <div class="list-group">
+        			{% if page.soundcloud %}
+        				<a class='list-group-item logo-color' href='{{post.soundcloud}}'><i class='fa fa-soundcloud'></i> Soundcloud</a>
         			{% endif %}
 
         			{% if post.spotify %}
-        			<li class="list-group-item">
-        				<a href='{{post.spotify}}'><i class='fa fa-spotify'></i> Spotify</a>
-        			</li>
+        				<a class='list-group-item logo-color' href='{{post.spotify}}'><i class='fa fa-spotify'></i> Spotify</a>
         			{% endif %}
 
         			{% if post.youtube %}
-        			<li class="list-group-item">
-        				<a href='{{post.youtube}}'><i class='fa fa-youtube'></i> Youtube</a>
-        			</li>
+        				<a class='list-group-item logo-color' href='{{post.youtube}}'><i class='fa fa-youtube'></i> Youtube</a>
         			{% endif %}
 
         			{% if post.deezer %}
-        			<li class="list-group-item">
-        				<a href='{{post.deezer}}'>Deezer</a>
-        			</li>
+        				<a class='list-group-item logo-color' href='{{post.deezer}}'>Deezer</a>
         			{% endif %}
 
         			{% if post.bandcamp %}
-        			<li class="list-group-item">
-        				<a href='{{post.bandcamp}}'>Bandcamp</a>
-        			</li>
+        				<a class='list-group-item logo-color' href='{{post.bandcamp}}'>Bandcamp</a>
         			{% endif %}
 
         			{% if post.site %}
-        			<li class="list-group-item">
-        				<a href='{{post.site}}'>Site</a>
-        			</li>
+        				<a class='list-group-item logo-color' href='{{post.site}}'>Site</a>
         			{% endif %}
-
-        		</ul>
+        		</div>
 
             <div class='tags gray-color'>
         			Tags:
@@ -79,16 +66,16 @@ layout: default
           <br/> <br/>
         {% endfor %}
 
-      {% if paginator.total_pages > 5 %}
+      {% if paginator.total_posts > 5 %}
         <div class="pagination">
           {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path }}" class="previous btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> Anterior</a>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl}}" class="previous btn btn-default logo-color"><span class="glyphicon glyphicon-chevron-left"></span> Anterior</a>
           {% else %}
             <button class="previous btn btn-default" disabled> <span class="glyphicon glyphicon-chevron-left"></span> Anterior</button>
           {% endif %}
-          <span class="page_number ">{{ paginator.page }} de {{ paginator.total_pages }}</span>
+          <span class="page_number logo-color">{{ paginator.page }} de {{ paginator.total_pages }}</span>
           {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}" class="next btn btn-default">Próximo</a>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl}}" class="next btn btn-default logo-color">Próximo</a>
           {% else %}
             <button class="next btn btn-default" disabled> <span class="glyphicon glyphicon-chevron-right"></span> Próximo</button>
           {% endif %}
@@ -102,11 +89,16 @@ layout: default
     <div class="col-sm-3 col-md-3 right-sidebar">
       <ul class='links-sidebar'>
         <li>
-          <a href='{{ "/category/Album" | prepend: site.baseurl }}' style='font-weight: bolder;'>Albuns ({{site.categories['Album'].size}})</a>
+          <a href='{{ "/category/album" | prepend: site.baseurl }}' style='font-weight: bolder;'>Albuns ({{site.categories['Album'].size}})</a>
         </li>
+
+        <li>
+          <a href='{{ "/category/compilacao" | prepend: site.baseurl }}' style='font-weight: bolder;'>Compilação ({{site.categories['Compilacao'].size}})</a>
+        </li>
+
         <!--
         <li>
-          <a href='{{ "/category/Single" | prepend: site.baseurl }}' style='font-weight: bolder;'>Singles ({{site.categories['Single'].size}})</a>
+          <a href='{{ "/category/single" | prepend: site.baseurl }}' style='font-weight: bolder;'>Singles ({{site.categories['Single'].size}})</a>
         </li>
 
         <li>
@@ -114,11 +106,7 @@ layout: default
         </li>
 
         <li>
-          <a href='{{ "/category/Compilacao" | prepend: site.baseurl }}' style='font-weight: bolder;'>Compilação ({{site.categories['Compilacao'].size}})</a>
-        </li>
-
-        <li>
-          <a href='{{ "/category/Playlist" | prepend: site.baseurl }}' style='font-weight: bolder;'>Playlists ({{site.categories['Playlist'].size}})</a>
+          <a href='{{ "/category/playlist" | prepend: site.baseurl }}' style='font-weight: bolder;'>Playlists ({{site.categories['Playlist'].size}})</a>
         </li>
       -->
       </ul>
