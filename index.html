@@ -89,11 +89,11 @@ layout: default
     <div class="col-sm-3 col-md-3 right-sidebar">
       <ul class='links-sidebar'>
         <li>
-          <a href='{{ "/category/album" | prepend: site.baseurl }}' style='font-weight: bolder;'>Albuns ({{site.categories['Album'].size}})</a>
+          <a href='{{ "/category/album" | prepend: site.baseurl }}' class='bold'>Albuns ({{site.categories['Album'].size}})</a>
         </li>
 
         <li>
-          <a href='{{ "/category/compilacao" | prepend: site.baseurl }}' style='font-weight: bolder;'>Compilação ({{site.categories['Compilacao'].size}})</a>
+          <a href='{{ "/category/compilacao" | prepend: site.baseurl }}' class='bold'>Compilação ({{site.categories['Compilacao'].size}})</a>
         </li>
 
         <!--
@@ -109,6 +109,15 @@ layout: default
           <a href='{{ "/category/playlist" | prepend: site.baseurl }}' style='font-weight: bolder;'>Playlists ({{site.categories['Playlist'].size}})</a>
         </li>
       -->
+
+        <li class='margin-top-2'>
+          <a href='http://twitter.com/blogmusicall' class="bold"><i class="fa fa-twitter" aria-hidden="true"></i> pq n me segue?</a>
+        </li>
+
+        <!--<li>
+          <a href='#' class="bold"><i class="fa fa-facebook-square" aria-hidden="true"></i> pq n me curte?</a>
+        </li> -->
+
       </ul>
     </div>
 
