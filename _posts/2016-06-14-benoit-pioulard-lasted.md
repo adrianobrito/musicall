@@ -3,11 +3,12 @@ layout: post
 title:  "Benoît Pioulard - Lasted"
 date:   2015-06-14 18:03:28
 category: Album
-year: 2016
+year: 2010
 author: Adriano Brito
 cover: lasted.jpg
-youtube: https://www.youtube.com/watch?v=-XK6gwtCRAk
-spotify: https://open.spotify.com/album/6FwyZfbxhEqNrQtPaFT132
+embedded_youtube: https://www.youtube.com/embed/U7G3lc6KA-0
+youtube: https://www.youtube.com/watch?v=cf_0w0guR1k&list=PL7DBB152F1F567840&index=1
+spotify: https://play.spotify.com/album/6FwyZfbxhEqNrQtPaFT132?play=true&utm_source=open.spotify.com&utm_medium=open
 deezer: https://www.deezer.com/album/6114420
 bandcamp: https://pioulard.bandcamp.com/album/lasted
 tags:
