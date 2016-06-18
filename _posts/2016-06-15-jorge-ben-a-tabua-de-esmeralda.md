@@ -6,7 +6,7 @@ category: Album
 year: 2007
 author: Adriano Brito
 cover: ATabuadeEsmeralda.jpg
-embedded_youtube: https://www.youtube.com/embed/MaVH0HBOVbY
+embedded_youtube: https://www.youtube.com/embed/LRgqb0HvoCw
 youtube: https://www.youtube.com/watch?v=KpbkJrJodcQ
 spotify: https://play.spotify.com/album/4YtVB9VpAs4Os4W1OLYJOG
 deezer: https://www.deezer.com/album/432731

@@ -6,7 +6,7 @@ category: EP
 year: 2016
 author: Adriano Brito
 cover: healthy-animal.jpg
-embedded_youtube: https://www.youtube.com/embed/xW0IpYJRxGI
+embedded_youtube: https://www.youtube.com/embed/Rp5Ea4dRuiw
 youtube: https://www.youtube.com/watch?v=tzUbMkIQdfQ
 soundcloud: https://soundcloud.com/ohslo/sets/healthy-animal-ep
 spotify: https://open.spotify.com/album/2JRzlrBBVSz4ZjCihidxDG
