@@ -6,14 +6,14 @@ category: Album
 year: 2015
 author: Adriano Brito
 cover: thankyouneil.jpg
-embedded_youtube: https://www.youtube.com/embed/Xi0BoXEjBkA
-youtube: https://www.youtube.com/watch?v=ag19rqQ4AG8
+embedded_youtube: https://www.youtube.com/embed/Xi0BoXEjBkA		 
+youtube: https://www.youtube.com/watch?v=ag19rqQ4AG8		 
 spotify: https://play.spotify.com/album/44w7DdH5jQVTMSi5owjwHu?play=true&utm_source=open.spotify.com&utm_medium=open
 deezer: http://www.deezer.com/album/11581146
 bandcamp: https://badpandarecords.bandcamp.com/album/dumbo-gets-mad-thank-you-neil
 tags:
   - Soul
-  - Rock
+  - Rock Psicodelico
 ---
 
 1. Universal Guide.

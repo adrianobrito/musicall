@@ -85,7 +85,7 @@ layout: default
           {% endif %}
           <span class="page_number logo-color">{{ paginator.page }} de {{ paginator.total_pages }}</span>
           {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl}}" class="next btn btn-default logo-color">Próximo</a>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl}}" class="next btn btn-default logo-color"> <span class="glyphicon glyphicon-chevron-right"></span> Próximo</a>
           {% else %}
             <button class="next btn btn-default" disabled> <span class="glyphicon glyphicon-chevron-right"></span> Próximo</button>
           {% endif %}
