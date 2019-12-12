@@ -10,8 +10,8 @@ description: > # this means to ignore newlines until "baseurl:"
 gems: [jekyll-paginate]
 
 # Local Config
-baseurl: "http://musicall.blog.br" # the subpath of your site, e.g. /blog/
-url: "http://musicall.blog.br" # the base hostname & protocol for your site
+baseurl: "http://adrianobrito.github.io/musicall/" # the subpath of your site, e.g. /blog/
+url: "http://adrianobrito.github.io/musicall/" # the base hostname & protocol for your site
 #baseurl: "/musicall/" # the subpath of your site, e.g. /blog/
 #url: "http://localhost:4000"
 
